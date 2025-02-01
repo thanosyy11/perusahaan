@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Allow direct access to uploads directory
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} ^/uploads/
+    RewriteRule ^(.*)$ $1 [L]
+</IfModule>
+
+# Allow access to image files
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>

@@ -1,0 +1,27 @@
+/* Terapkan font Ubuntu ke seluruh halaman */
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Tambahkan variasi berat font */
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-regular-italic {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 500;
+}
+
+.font-bold-italic {
+    font-weight: 500;
+    font-style: italic;
+}
